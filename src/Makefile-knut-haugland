@@ -61,8 +61,12 @@ deps: stage
 	cd stage && git clone "https://x-access-token:$(GITHUB_TOKEN)@github.com/cliffano/terraform-kon-tiki-studio.git"
 	bob dep
 
-# Update Makefile to the latest version on origin's main branch
-update-to-latest:
+# Update Makefile to the latest version tag
+update-to-latest: TARGET_PIEMAKER_VERSION = $(shell curl -s https://api.github.com/repos/cliffano/knut-haugland/tags | jq -r '.[0].name')
+update-to-latest: update-to-version
+
+# Update Makefile to the main branch
+update-to-main:
 	curl https://raw.githubusercontent.com/cliffano/knut-haugland/main/src/Makefile-knut-haugland -o Makefile
 
 # Update Makefile to the version defined in TARGET_KNUT_HAUGLAND_VERSION parameter

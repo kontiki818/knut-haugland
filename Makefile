@@ -9,9 +9,11 @@ lint:
 
 test:
 	cd examples/static-redirect/ && \
-	  make -f ../../src/Makefile-knut-haugland ci
+	  make -f ../../src/Makefile-knut-haugland ci update-to-latest update-to-main && \
+		make -f ../src/Makefile-piemaker update-to-version TARGET_PIEMAKER_VERSION=1.0.0
 	cd examples/static-content/ && \
-	  make -f ../../src/Makefile-knut-haugland ci
+	  make -f ../../src/Makefile-knut-haugland ci update-to-latest update-to-main && \
+		make -f ../src/Makefile-piemaker update-to-version TARGET_PIEMAKER_VERSION=1.0.0
 
 release-major:
 	rtk release --release-increment-type major
