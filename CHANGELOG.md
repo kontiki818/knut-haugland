@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Rename Makefile target update-to-latest to update-to-main
+- Replace retired x-access-token with gh CLI for repo cloning
 
 ## 0.10.0 - 2024-08-09
 ### Added

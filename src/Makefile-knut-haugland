@@ -56,9 +56,10 @@ clean:
 	bob clean
 	rm -rf .terraform/ .terraform.lock.hcl stage/
 
-# Retrieve the Pyhon package dependencies
+# Retrieve Studio customisation of Terraform Kon-Tiki
+# and node package dependencies
 deps: stage
-	cd stage && git clone "https://x-access-token:$(GITHUB_TOKEN)@github.com/cliffano/terraform-kon-tiki-studio.git"
+	cd stage && rm -rf terraform-kon-tiki-studio &&  gh repo clone cliffano/terraform-kon-tiki-studio
 	bob dep
 
 # Update Makefile to the latest version tag
