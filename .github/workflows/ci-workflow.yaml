@@ -14,6 +14,6 @@ jobs:
       - uses: cliffano/command-docker-action@main
         with:
           command: 'make ci'
-          image: cliffano/kon-tiki:3.9.0
+          image: cliffano/kon-tiki:3.7.0
           shell: bash
           env_file: '/tmp/.env'
