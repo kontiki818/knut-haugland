@@ -15,5 +15,6 @@ jobs:
         with:
           command: 'make ci'
           image: cliffano/kon-tiki:3.7.0
+          extra_path: '/root/.local/bin:/usr/local/node/bin'
           shell: bash
           env_file: '/tmp/.env'
