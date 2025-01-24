@@ -14,7 +14,7 @@ jobs:
       - uses: cliffano/command-docker-action@main
         with:
           command: 'make ci'
-          image: cliffano/kon-tiki:3.8.0
-          extra_path: '/root/.local/bin:/usr/local/node/bin'
+          image: cliffano/kon-tiki:3.9.0
+          extra_path: '/root/.local/bin:/root/go/bin:/usr/local/go/bin:/usr/local/node/bin'
           shell: bash
           env_file: '/tmp/.env'
