@@ -63,7 +63,7 @@ deps: stage
 	bob dep
 
 # Update Makefile to the latest version tag
-update-to-latest: TARGET_PIEMAKER_VERSION = $(shell curl -s https://api.github.com/repos/cliffano/knut-haugland/tags | jq -r '.[0].name')
+update-to-latest: TARGET_KNUT_HAUGLAND_VERSION = $(shell curl -s https://api.github.com/repos/cliffano/knut-haugland/tags | jq -r '.[0].name')
 update-to-latest: update-to-version
 
 # Update Makefile to the main branch
