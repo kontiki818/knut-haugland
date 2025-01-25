@@ -10,10 +10,10 @@ lint:
 test:
 	cd examples/static-redirect/ && \
 	  make -f ../../src/Makefile-knut-haugland ci update-to-latest update-to-main && \
-		make -f ../src/Makefile-knut-haugland update-to-version TARGET_KNUT_HAUGLAND_VERSION=0.10.0
+		make -f ../../src/Makefile-knut-haugland update-to-version TARGET_KNUT_HAUGLAND_VERSION=0.10.0
 	cd examples/static-content/ && \
 	  make -f ../../src/Makefile-knut-haugland ci update-to-latest update-to-main && \
-		make -f ../src/Makefile-knut-haugland update-to-version TARGET_KNUT_HAUGLAND_VERSION=0.10.0
+		make -f ../../src/Makefile-knut-haugland update-to-version TARGET_KNUT_HAUGLAND_VERSION=0.10.0
 
 release-major:
 	rtk release --release-increment-type major
