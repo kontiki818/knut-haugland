@@ -3,7 +3,7 @@ ifndef GITHUB_TOKEN
     $(error Please specify GITHUB_TOKEN)
 endif
 # GH_TOKEN is used for gh within GitHub Actions https://cli.github.com/manual/gh_auth_login
-GH_TOKEN=GITHUB_TOKEN
+GH_TOKEN=${GITHUB_TOKEN}
 
 ################################################################
 # KnutHaugland: Makefile for building Kon-Tiki sites
@@ -59,7 +59,7 @@ clean:
 # Retrieve Studio customisation of Terraform Kon-Tiki
 # and node package dependencies
 deps: stage
-	cd stage && rm -rf terraform-kon-tiki-studio &&  gh repo clone cliffano/terraform-kon-tiki-studio
+	cd stage && rm -rf terraform-kon-tiki-studio && gh repo clone cliffano/terraform-kon-tiki-studio
 	bob dep
 
 # Update Makefile to the latest version tag

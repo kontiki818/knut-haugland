@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Fixed
+- Fix GH_TOKEN value initialisation
+
 ## 1.0.0 - 2025-01-25
 ### Added
 - Add new update-to-latest which updates to latest version tag
