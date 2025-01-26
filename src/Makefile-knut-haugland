@@ -11,7 +11,7 @@ GH_TOKEN=${GITHUB_TOKEN}
 ################################################################
 
 # KnutHaugland's version number
-KNUT_HAUGLAND_VERSION = 1.0.2-pre.0
+KNUT_HAUGLAND_VERSION = 1.1.0
 
 ################################################################
 # User configuration variables
