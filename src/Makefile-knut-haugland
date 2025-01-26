@@ -83,6 +83,12 @@ build:
 deploy:
 	aws s3 cp --recursive --region $(AWS_REGION) .bob/site/ae86/ s3://$(BUCKET_NAME)
 
+x-build:
+	make -f Makefile-extras x-build
+
+x-deploy:
+	make -f Makefile-extras x-deploy AWS_REGION=$(AWS_REGION) BUCKET_NAME=$(BUCKET_NAME)
+
 ################################################################
 # Publishing targets
 
@@ -112,4 +118,4 @@ infra-import:
 
 ################################################################
 
-.PHONY: test ci all stage clean deps update-to-latest update-to-version build deploy publish infra-init infra-destroy infra-refresh infra-plan infra-apply infra-import
+.PHONY: test ci all stage clean deps update-to-latest update-to-version build deploy x-build x-deploy publish infra-init infra-destroy infra-refresh infra-plan infra-apply infra-import

@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+- Add x-build x-deploy targets to allow build and deploy via Makefile-extras
+
 ## 1.0.1 - 2025-01-26
 ### Fixed
 - Fix GH_TOKEN value initialisation
