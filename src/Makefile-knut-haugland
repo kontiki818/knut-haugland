@@ -65,6 +65,10 @@ deps: stage
 lint:
 	find data/ -type f -name "*.json" | while IFS= read -r file; do echo "> $$file"; python3 -m json.tool "$$file"; done
 
+# Placeholder for now - needed by checkmake
+test:
+	echo "PLACEHOLDER test target"
+
 # Update Makefile to the latest version tag
 update-to-latest: TARGET_KNUT_HAUGLAND_VERSION = $(shell curl -s https://api.github.com/repos/cliffano/knut-haugland/tags | jq -r '.[0].name')
 update-to-latest: update-to-version
@@ -121,4 +125,4 @@ infra-import:
 
 ################################################################
 
-.PHONY: all ci clean deps stage build deploy x-build x-deploy publish init infra-init infra-destroy infra-refresh infra-plan infra-apply infra-import update-to-latest update-to-main update-to-version
+.PHONY: ci all stage clean deps lint test update-to-latest update-to-main update-to-version build deploy x-build x-deploy publish infra-init infra-destroy infra-refresh infra-plan infra-apply infra-import
