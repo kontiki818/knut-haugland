@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+- Add lint target to lint JSON data
+
 ## 1.1.0 - 2025-01-26
 ### Added
 - Add x-build x-deploy targets to allow build and deploy via Makefile-extras

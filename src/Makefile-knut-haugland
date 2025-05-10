@@ -42,7 +42,7 @@ export AWS_DEFAULT_REGION=${AWS_REGION}
 # Base targets
 
 # CI target to be executed by CI/CD tool
-ci: clean deps build infra-init
+ci: clean deps lint build infra-init
 
 # All target involves creating infra from scratch and then deploy the site
 all: clean deps infra-init infra-destroy infra-apply build deploy
@@ -61,6 +61,9 @@ clean:
 deps: stage
 	cd stage && rm -rf terraform-kon-tiki-studio && gh repo clone cliffano/terraform-kon-tiki-studio
 	bob dep
+
+lint:
+	find data/ -type f -name "*.json" | while IFS= read -r file; do echo "> $$file"; python3 -m json.tool "$$file"; done
 
 # Update Makefile to the latest version tag
 update-to-latest: TARGET_KNUT_HAUGLAND_VERSION = $(shell curl -s https://api.github.com/repos/cliffano/knut-haugland/tags | jq -r '.[0].name')
@@ -118,4 +121,4 @@ infra-import:
 
 ################################################################
 
-.PHONY: test ci all stage clean deps update-to-latest update-to-version build deploy x-build x-deploy publish infra-init infra-destroy infra-refresh infra-plan infra-apply infra-import
+.PHONY: all ci clean deps stage build deploy x-build x-deploy publish init infra-init infra-destroy infra-refresh infra-plan infra-apply infra-import update-to-latest update-to-main update-to-version
