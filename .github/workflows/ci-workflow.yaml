@@ -10,7 +10,7 @@ jobs:
         with:
           file-path: '/tmp/.env'
         env:
-          GITHUB_TOKEN: ${{ secrets.STUDIO_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.KONTIKI818_GITHUB_TOKEN }}
       - uses: cliffano/command-docker-action@main
         with:
           command: 'make ci'
