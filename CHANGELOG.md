@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Switch cliffano/terraform-kon-tiki-studio to kontiki818/terraform-studio-kon-tiki
 - Switch all GH Action workflows to use KONTIKI818 GitHub token
 - Update badges to kontiki818 org
+- Switch addendum module to kontiki818/terraform-studio-kon-tiki
 
 ## 1.2.0 - 2025-05-10
 ### Added
