@@ -9,7 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Switch cliffano/terraform-kon-tiki-studio to kontiki818/terraform-studio-kon-tiki
-- Switch token from STUDIO_ to KONTIKI818_ prefix
 
 ## 1.2.0 - 2025-05-10
 ### Added
