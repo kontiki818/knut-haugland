@@ -59,7 +59,7 @@ clean:
 # Retrieve Studio customisation of Terraform Kon-Tiki
 # and node package dependencies
 deps: stage
-	cd stage && rm -rf terraform-kon-tiki-studio && gh repo clone cliffano/terraform-kon-tiki-studio
+	cd stage && rm -rf terraform-studio-kon-tiki && gh repo clone kontiki818/terraform-studio-kon-tiki
 	bob dep
 
 lint:

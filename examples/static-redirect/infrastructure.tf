@@ -33,7 +33,7 @@ module "kon_tiki" {
 }
 
 module "kon_tiki_addendum" {
-  source              = "./stage/terraform-kon-tiki-studio/"
+  source              = "./stage/terraform-studio-kon-tiki/"
   region              = "ap-southeast-2"
   site_id             = "knuthauglandexample"
   site_cdn_id         =  module.kon_tiki.cloudfront_distribution_cdn.id
