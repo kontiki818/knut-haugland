@@ -1,6 +1,6 @@
 <img align="right" src="https://raw.github.com/cliffano/knut-haugland/master/avatar.jpg" alt="Avatar"/>
 
-[![Build Status](https://github.com/cliffano/knut-haugland/actions/workflows/ci-workflow.yaml/badge.svg)](https://github.com/cliffano/knut-haugland/actions/workflows/ci-workflow.yaml)
+[![Build Status](https://github.com/kontiki818/knut-haugland/actions/workflows/ci-workflow.yaml/badge.svg)](https://github.com/kontiki818/knut-haugland/actions/workflows/ci-workflow.yaml)
 <br/>
 
 Knut Haugland
@@ -57,4 +57,4 @@ Colophon
 
 Related Projects:
 
-* [generator-kon-tiki](https://github.com/cliffano/generator-kon-tiki) - Kon-Tiki static web site projects generator using Plop
+* [generator-kon-tiki](https://github.com/kontiki818/generator-kon-tiki) - Kon-Tiki static web site projects generator using Plop
