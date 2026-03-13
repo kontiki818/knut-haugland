@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+- Add missing static-content clean
+
 ### Changed
 - Switch cliffano/terraform-kon-tiki-studio to kontiki818/terraform-studio-kon-tiki
 - Switch all GH Action workflows to use KONTIKI818 GitHub token

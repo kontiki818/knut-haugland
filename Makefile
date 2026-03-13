@@ -3,6 +3,8 @@ ci: clean lint test
 clean:
 	cd examples/static-redirect/ && \
 	  make -f ../../src/Makefile-knut-haugland clean
+	cd examples/static-content/ && \
+	  make -f ../../src/Makefile-knut-haugland clean
 
 lint:
 	checkmake src/Makefile-knut-haugland
