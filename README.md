@@ -1,6 +1,7 @@
 <img align="right" src="https://raw.github.com/cliffano/knut-haugland/master/avatar.jpg" alt="Avatar"/>
 
 [![Build Status](https://github.com/kontiki818/knut-haugland/actions/workflows/ci-workflow.yaml/badge.svg)](https://github.com/kontiki818/knut-haugland/actions/workflows/ci-workflow.yaml)
+[![Code Scanning Status](https://github.com/kontiki818/knut-haugland/workflows/CodeQL/badge.svg)](https://github.com/kontiki818/knut-haugland/actions?query=workflow%3ACodeQL)
 <br/>
 
 Knut Haugland
